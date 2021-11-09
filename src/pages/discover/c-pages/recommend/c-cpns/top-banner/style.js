@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-11-08 20:32:15
- * @LastEditTime: 2021-11-08 20:32:16
+ * @LastEditTime: 2021-11-09 09:52:57
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /my-music/src/pages/discover/c-pages/recommend/c-cpns/top-banner/style.js
@@ -38,7 +38,7 @@ export const BannerRight = styled.a.attrs({
 })`
   width: 254px;
   height: 270px;
-  background: url(${require("@/assets/img/download.png")});
+  background: url(${require("@/assets/img/download.png").default});
 `
 
 export const BannerControl = styled.div`
@@ -52,7 +52,7 @@ export const BannerControl = styled.div`
     position: absolute;
     width: 37px;
     height: 63px;
-    background-image: url(${require("@/assets/img/banner_sprite.png")});
+    background-image: url(${require("@/assets/img/banner_sprite.png").default});
     background-color: transparent;
     cursor: pointer;
 
