@@ -1,10 +1,10 @@
 /*
  * @Author: your name
- * @Date: 2021-11-08 20:32:15
- * @LastEditTime: 2021-11-09 09:52:57
+ * @Date: 2021-11-08 17:51:10
+ * @LastEditTime: 2021-11-10 16:23:00
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- * @FilePath: /my-music/src/pages/discover/c-pages/recommend/c-cpns/top-banner/style.js
+ * @FilePath: /WYY-Music/src/pages/discover/c-pages/recommend/c-cpns/top-banner/style.js
  */
 import styled from 'styled-components';
 

@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-11-08 20:35:23
+ * @LastEditTime: 2021-11-10 16:36:20
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /my-music/src/router/index.js
+ */
 import React from "react";
 import { Redirect } from "react-router-dom";
 
@@ -17,19 +25,19 @@ const HYDiscover = React.lazy((_) => import("../pages/discover"));
 const HYRecommend = React.lazy((_) =>
   import("../pages/discover/c-pages/recommend")
 );
-// const HYRanking = React.lazy((_) =>
-//   import("../pages/discover/c-pages/ranking")
-// );
-// const HYSongs = React.lazy((_) => import("../pages/discover/c-pages/songs"));
-// const HYDjradio = React.lazy((_) =>
-//   import("../pages/discover/c-pages/djradio")
-// );
-// const HYArtist = React.lazy((_) => import("../pages/discover/c-pages/artist"));
-// const HYAlbum = React.lazy((_) => import("../pages/discover/c-pages/album"));
-// const HYPlayer = React.lazy((_) => import("../pages/player"));
+const HYRanking = React.lazy((_) =>
+  import("../pages/discover/c-pages/ranking")
+);
+const HYSongs = React.lazy((_) => import("../pages/discover/c-pages/songs"));
+const HYDjradio = React.lazy((_) =>
+  import("../pages/discover/c-pages/djradio")
+);
+const HYArtist = React.lazy((_) => import("../pages/discover/c-pages/artist"));
+const HYAlbum = React.lazy((_) => import("../pages/discover/c-pages/album"));
+const HYPlayer = React.lazy((_) => import("../pages/player"));
 
-// const HYFriend = React.lazy((_) => import("../pages/friend"));
-// const HYMine = React.lazy((_) => import("../pages/mine"));
+const HYFriend = React.lazy((_) => import("../pages/friend"));
+const HYMine = React.lazy((_) => import("../pages/mine"));
 
 export default [
   {
@@ -50,39 +58,39 @@ export default [
         path: "/discover/recommend",
         component: HYRecommend,
       },
-    //   {
-    //     path: "/discover/ranking",
-    //     component: HYRanking,
-    //   },
-    //   {
-    //     path: "/discover/songs",
-    //     component: HYSongs,
-    //   },
-    //   {
-    //     path: "/discover/djradio",
-    //     exact: true,
-    //     component: HYDjradio,
-    //   },
-    //   {
-    //     path: "/discover/artist",
-    //     component: HYArtist,
-    //   },
-    //   {
-    //     path: "/discover/album",
-    //     component: HYAlbum,
-    //   },
-    //   {
-    //     path: "/discover/player",
-    //     component: HYPlayer,
-    //   },
+      {
+        path: "/discover/ranking",
+        component: HYRanking,
+      },
+      {
+        path: "/discover/songs",
+        component: HYSongs,
+      },
+      {
+        path: "/discover/djradio",
+        exact: true,
+        component: HYDjradio,
+      },
+      {
+        path: "/discover/artist",
+        component: HYArtist,
+      },
+      {
+        path: "/discover/album",
+        component: HYAlbum,
+      },
+      {
+        path: "/discover/player",
+        component: HYPlayer,
+      },
     ],
   },
-//   {
-//     path: "/friend",
-//     component: HYFriend,
-//   },
-//   {
-//     path: "/mine",
-//     component: HYMine,
-//   },
+  {
+    path: "/friend",
+    component: HYFriend,
+  },
+  {
+    path: "/mine",
+    component: HYMine,
+  },
 ];

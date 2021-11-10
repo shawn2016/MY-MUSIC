@@ -1,12 +1,12 @@
 /*
  * @Author: your name
- * @Date: 2021-11-09 11:37:15
- * @LastEditTime: 2021-11-09 14:50:58
+ * @Date: 2021-11-08 17:51:10
+ * @LastEditTime: 2021-11-10 16:54:01
  * @LastEditors: Please set LastEditors
  * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  * @FilePath: /my-music/src/components/app-footer/style.js
  */
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const AppFooterWrapper = styled.div`
   height: 172px;
@@ -19,7 +19,7 @@ export const AppFooterWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
   }
-`
+`;
 
 export const FooterLeft = styled.div`
   padding-top: 15px;
@@ -35,13 +35,22 @@ export const FooterLeft = styled.div`
       color: #999;
     }
   }
-
-  .copyright {
+  .copyright,
+  .report {
     span {
       margin-right: 15px;
     }
   }
-`
+  .police-logo {
+    width: 14px;
+    height: 14px;
+    background: url(${require("@/assets/img/police.png").default}) no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: -2px;
+  }
+`;
 
 export const FooterRight = styled.ul`
   display: flex;
@@ -57,7 +66,8 @@ export const FooterRight = styled.ul`
       width: 50px;
       height: 45px;
 
-      background-image: url(${require("@/assets/img/sprite_footer_02.png").default});
+      background-image: url(${require("@/assets/img/sprite_footer_02.png")
+        .default});
       background-size: 110px 450px;
     }
 
@@ -79,7 +89,8 @@ export const FooterRight = styled.ul`
       display: block;
       width: 52px;
       height: 10px;
-      background-image: url(${require("@/assets/img/sprite_footer_01.png").default});
+      background-image: url(${require("@/assets/img/sprite_footer_01.png")
+        .default});
       background-size: 180px 100px;
     }
 
@@ -100,4 +111,4 @@ export const FooterRight = styled.ul`
       margin-top: 6px;
     }
   }
-`
+`;
